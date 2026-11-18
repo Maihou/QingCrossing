@@ -16,7 +16,7 @@ function present(article) {
   function select(index) {
     selected.set(scene,index);
     const [,file,alt] = views[index];
-    shot.src = 'surface-media/' + file + '.png';
+    shot.src = 'surface-frames/' + file + '.png';
     shot.alt = alt;
     for (const [n,button] of [...choices.children].entries()) button.setAttribute('aria-pressed',String(n===index));
   }
